@@ -1,0 +1,106 @@
+// these are maintained in mixins.scss
+// $too-small-width: 10px;
+// $mobile-width: 278px;
+// $tablet-width: 540px;
+// $desktop-width: 1024px;
+
+// Step 1) Setup your ratio
+// Example: 1.61803398875 = Golden Ratio
+$ratio: 1.618;
+
+@mixin layout($font-size) {
+
+  $base-line-height: $font-size * $ratio;
+  $padding: $base-line-height;
+
+  /**
+  body {
+    //font-size: $font-size;
+    //line-height: ($font-size * $ratio);
+  }
+
+  h1 {
+    //font-size: ((($font-size * $ratio) * $ratio) * $ratio);
+    //line-height: ($font-size * $ratio) * 3;
+  }
+
+  h2 {
+    //font-size: (($font-size * $ratio) * $ratio);
+    //line-height: ($font-size * $ratio) * 2;
+  }
+
+  h3 {
+    //font-size: $font-size * $ratio;
+    //line-height: ($font-size * $ratio);
+  }
+
+  h4 {
+    //font-size: $font-size;
+    //line-height: ($font-size * $ratio);
+  }
+
+  p {
+    //font-size: $font-size;
+  }
+
+  a {
+    //font-size: $font-size;
+  }
+
+  button {
+    //font-size: $font-size;
+  }
+
+  .heading {
+    //font-size: $font-size;
+  }*/
+
+  // Not Sure if this needs to be included in the RWD.
+  /*.app-banner {
+    font-size: $font-size;
+    padding: round($padding * .88)  // top
+             round($padding * .88)  // right
+             round($padding * .88)  // bottom
+             round($padding * 3.0);    // left
+  }
+
+  */
+}
+// end layout mixin
+
+// Step 2) Pick your base font size per breakpoint using the mixin
+// Example: @include typography(16px);
+
+// Declare you breakpoints
+@media (max-width: 299px) {
+  @include layout(8px);
+}
+
+//start of mobile first breakpoints
+@media (min-width: 300px) {
+  @include layout(11px);
+}
+
+@media(min-width: 600px) {
+  @include layout(13px);
+}
+
+@media(min-width: 800px) {
+  @include layout(16px);
+}
+
+@media(min-width: 1000px) {
+  @include layout(18px);
+}
+
+@media(min-width: 1200px) {
+  @include layout(20px);
+}
+
+@media(min-width: 1400px) {
+  @include layout(24px);
+}
+
+@media(min-width: 1600px) {
+  @include layout(30px);
+}

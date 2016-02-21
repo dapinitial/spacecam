@@ -1,0 +1,125 @@
+/** Declaring the viewport
+ */
+@-o-viewport {width: device-width;}
+@-ms-viewport {width: device-width;}
+@viewport {width: device-width;}
+
+/** Setting up the browser's scroll bars
+ */
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+::-webkit-scrollbar-track {
+  background-color:transparent;
+  box-shadow: none;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  user-select: none;
+}
+
+html {
+ font-size: 1px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+    background: #34343f;
+    color: #f2f2f2;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    height: 100%;
+    @include too-small {
+      display: none;
+    }
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
+.invisible {
+  opacity: 0;
+  visibility: hidden;
+}
+
+a:link {
+  color: #000;
+  display: block;
+  transition: .2s linear color;
+}
+
+a:visited {
+  color: #999;
+}
+
+a:hover {
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .2s linear color;
+}
+
+a:focus {
+  color: #333333;
+}
+
+a:active {
+  color: #2B8CBF;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+}
+
+article {
+  /*background-color: 1D1A21;
+  background: rgba(0,0,0,.2);
+  background-size: cover;*/
+  color: #ccc;
+  font-size: 16rem;
+  font-weight: 200;
+  height: 100vh;
+  letter-spacing: 2rem;
+  min-width: calc(100vw - 94rem);
+  overflow: hidden;
+  padding: 24rem;
+  position: relative;
+  transition: all linear .45s;
+  perspective: 80rem;
+  user-select: none;
+  /* &:hover {
+     background: none;
+     transition: background linear .65s;
+   }*/
+}

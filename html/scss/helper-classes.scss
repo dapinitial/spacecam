@@ -1,0 +1,53 @@
+
+/** OOCSS helper functions for layout works well, esp with ie6+, perfect for hospitals, government, legacy, abroad
+ */
+.wrapper {
+  margin: 0 auto;
+  width: 90vw;
+   max-width: 1280px;
+}
+
+.line:after,
+.lastUnit:after{
+  clear:both;
+  content:"x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x  ";
+  display:block;
+  font-size:xx-large;
+  height:0 !important;
+  line-height:0;
+  overflow:hidden;
+  visibility:hidden;
+
+}
+
+.line{
+  *zoom:1;
+}
+
+.lastUnit{
+  display:table-cell;
+  float:none;
+  width:auto;
+  *display:block;
+  *zoom:1;
+  _position:relative;
+  _left:-3px;
+  _margin-right:-3px;
+}
+
+.unit {
+  display: inline-block;
+  float: left;
+}
+
+.unitRight {
+  float: right;
+}
+
+.left-column {
+  @include unit;
+}
+
+.right-column {
+  @include lastUnit;
+}

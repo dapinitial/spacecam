@@ -1,0 +1,152 @@
+
+// MediaQuery Mixins
+$too-small-width: 10px;
+$mobile-width: 278px;
+$tablet-width: 540px;
+$desktop-width: 1024px;
+
+@mixin too-small {
+  @media (min-width: #{$too-small-width}) and (max-width: #{$mobile-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+// Layout Mixins
+@mixin wrapper($extend: true) {
+  @if $extend {
+    @extend %wrapper;
+  } @else {
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 1280px;
+  }
+}
+
+%wrapper {
+  @include wrapper($extend: false);
+}
+
+@mixin line($extend: true) {
+  @if $extend {
+    @extend %line;
+  } @else {
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+}
+
+%line {
+  @include line($extend: false);
+}
+
+@mixin lastUnit($extend: true) {
+  @if $extend {
+    @extend %lastUnit;
+  } @else {
+    float: none;
+    display: block;
+    display: table-cell;
+    width: 9999em;
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+}
+
+%lastUnit {
+  @include lastUnit($extend: false);
+}
+
+@mixin unit($extend: true) {
+  @if $extend {
+    @extend %unit;
+  } @else {
+    display: inline-block;
+    float: left;
+  }
+}
+
+%unit {
+  @include unit($extend: false);
+}
+
+@mixin unitRight($extend: true) {
+  @if $extend {
+    @extend %unitRight;
+  } @else {
+    float: right;
+  }
+}
+
+%unitRight {
+  @include unitRight($extend: false);
+}
+
+@mixin fontSmoothing($extend: true) {
+  @if $extend {
+    @extend %fontSmoothing;
+  } @else {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+// Type, Icon, Viewport Mixins
+%fontSmoothing {
+  @include fontSmoothing($extend: false);
+}
+
+@mixin icon($extend: true) {
+  @if $extend {
+    @extend %icon;
+  } @else {
+    @include fontSmoothing;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font: normal normal normal 30rem/1 'Material-Design-Iconic-Font'; // Let's create a Starbucks Icon Font.
+  }
+}
+
+%icon {
+  @include icon($extend: false);
+}
+
+@mixin ellipsis($extend: true) {
+  @if $extend {
+    @extend %ellipsis;
+  } @else {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+  }
+}
+
+%ellipsis {
+  @include ellipsis($extend: false);
+}

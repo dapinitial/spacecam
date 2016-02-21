@@ -1,0 +1,32 @@
+button {
+  background: #fff;
+  border: 1rem solid #ccc;
+  border-radius: 6rem;
+  color: #696969;
+  cursor: pointer;
+  font-size: 13rem;
+  font-family: 'Avenir', sans-serif;
+  font-weight: normal;
+  margin-bottom: 20rem;
+  max-width: 210rem;
+  outline: 0;
+  padding: 10rem 14rem;
+  text-transform: uppercase;
+  width: 100%;
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  &.black-button {
+    background: #000;
+    border: 1rem solid #fff;
+    color: #fff;
+    &:hover {
+      background: #fff;
+      color: #000;
+    }
+  }
+  &[disabled] {
+
+  }
+}

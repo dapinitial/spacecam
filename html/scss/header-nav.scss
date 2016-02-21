@@ -1,0 +1,220 @@
+header {
+  background: #252328;
+  box-shadow: 0rem 0rem 6rem rgba(0,0,0,.5);
+  height: 100vh;
+  width: 60rem;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.nav-button, 
+.owl-prev, 
+.owl-next {
+  background: none;
+  border: 0;
+  border-bottom: 1px solid #1a1a1a;
+  border-top: 1px solid #2e2e2e;
+  border-left: 3px solid #000;
+  cursor: pointer;
+  display: block;
+  height: 60rem;
+  outline: 0;
+  padding: 20rem;
+  position: relative;
+  transition: background .25s ease-out 0s, border-left .2s linear;
+  width: 100%;
+  &:hover {
+    background: rgba(255,255,255,.05);
+    border-left: 3px solid #202020;
+  } &:last-child::after {
+    background: #2e2e2e;
+    bottom: -2px;
+    content: ' ';
+    display: block;
+    float: left;
+    height: 1rem;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.nav-button.active {
+  background: rgba(255,255,255,.05);
+  border-left: 3px solid #fff;
+  transition: background .25s ease-out 0s, border-left .2s linear;
+}
+
+.logo {
+  bottom: 115px;
+  color: #ccc;
+  cursor: none;
+  font-family: 'bgReg', sans-serif;
+  font-size: 18rem;
+  left: -89rem;
+  position: absolute;
+  text-decoration: none;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  width: 240px;
+  user-select: none;
+  & span {  
+    box-shadow: inset 2rem 2rem 2rem (0,0,0,1);
+    //color: #EA504E;
+    color: #444;
+    font-weight: normal;
+    //padding-left: 12rem;
+  }
+}
+
+
+.nav-button svg.icon {
+  display: block;
+  fill: rgba(0, 0, 0, .5);
+  transition: all .35s linear;
+}
+
+.icon.inset-shadow g {
+  filter: url('#inset-shadow');
+}
+
+.icon.diff-view rect {
+  clip-path: url('#diff-view-path');
+}
+
+.icon.settings rect {
+  clip-path: url('#settings-path');
+}
+
+.icon.search rect {
+  clip-path: url('#search-path');
+}
+
+.icon.shutter rect {
+  clip-path: url('#shutter-path');
+}
+
+.nav-button:hover svg {
+  fill: rgba(196, 205, 224, 1.0);
+  cursor: pointer;
+  transition: all .25s linear;
+}
+
+.nav-button.active .icon {
+  fill: rgba(255, 255, 255, 1.0);
+  -webkit-filter: drop-shadow(0rem 0rem 5rem rgba(255, 255, 255, .35));
+  -moz-filter: url('#drop-shadow');
+  transition: all .12s linear;
+}
+
+.nav-button.active .icon.inset-shadow g {
+  filter: 0;
+  -webkit-filter: 0;
+  -moz-filter: 0;
+}
+
+.icon.view-images {
+  padding: 21rem 0rem 0rem 14rem;
+  width: 114%;
+}
+
+.icon.indicator {
+  padding: 12rem;
+  width: 110%;
+  height: 110% !important;
+}
+
+.icon.settings {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 60px;
+  height: 60px;
+}
+
+.icon.diff-view {
+  position: absolute;
+  top: 19px;
+  left: 14px;
+  width: 48px;
+  height: 48px;
+}
+
+.icon.search {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 58px;
+  height: 58px;
+}
+
+.icon.shutter {
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  width: 25px;
+  height: 25px;
+}
+
+#indicator-light {
+  background: #333;
+  background-image: -webkit-radial-gradient(center bottom, ellipse cover, #ffeda3, #ffc800);
+  border: 1rem solid #3e3e3e;
+  border-radius: 50%;
+  margin: 0 18rem;
+  padding: 10rem;
+  position: absolute;
+  bottom: 15rem;
+}
+
+.diffView.active.expanded {
+  height: 266rem !important;
+  -webkit-transition: all .75s linear;
+}
+
+.diff-tools {
+  border-top: 1px solid #111;
+  position: absolute;
+  right: 330rem;
+  top: 113rem;
+  width: 59rem;
+  z-index: 99999;
+  transition: all 2s linear;
+  -webkit-animation: fade-in .75s;
+  -webkit-animation-fill-mode: both;
+  -webkit-transition-delay: .65s;
+  -webkit-animation-delay: .65s;
+}
+
+.diff-tools li {
+  border-bottom: 1rem solid #111;
+  border-top: 1rem solid #333;
+}
+
+.progress-button {
+  border: 0;
+  cursor: pointer;
+  font-family: Verdana;
+  font-size: 11rem;
+  color: #999;
+  outline: 0;
+  padding: 19rem 0rem;
+  pointer-events: visiblepainted;
+  position: relative;
+  text-align: center;
+  text-shadow: 1rem 2rem 1rem rgba(0, 0, 0, .75);
+  -webkit-user-select: none;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+}
+
+.progress-button:hover {
+  background: #181818;
+}
+
+.progress-button:active {
+  background: #121212;
+}

@@ -1,0 +1,123 @@
+
+/** Timeline 
+  */
+
+/** need to write a GWT function for this **/
+$animationDuration: .25s;
+$animationDelay: .075s;
+$commit: '.commit';
+
+.animating li {
+  transform: translateY(-100%) scaleY(1);
+  animation-name: insert-from-top;
+  animation-duration: $animationDuration;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  @for $i from 1 through 100 {
+    &:nth-child(#{$i}) {
+      animation-delay: $i * $animationDelay;
+      z-index: $i;
+    }
+  }
+}
+
+@keyframes insert-from-top {
+  0% {
+    opacity: 1;
+    transform: translateY(100%);
+  }    
+    
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+    
+}
+
+.timeline {
+  background: #1D1A21;
+  width: 70px; 
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  overflow-y: auto !important;
+  position: absolute;
+  top: 0;
+  right: 60px;
+  bottom: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  z-index: 10;
+}
+
+.commit{
+  width:30px;
+  height:30px;
+  border-radius: 4px;
+  background:rgba(255,255,255,.15);
+  margin:0 auto 5px;
+  margin-left: 0;
+  -webkit-transition: all 150ms ease-in-out;
+  box-shadow: 0px;
+}
+
+.commit.nuche {
+  background: #c4cde0;
+}
+
+.commit:hover, .commit.active {
+  height:32px;
+  width:32px;
+  margin-left: -1.1px;
+  box-shadow: 0px 0px 27px -6px rgba(255,255,255,1.0);
+  background:rgba(255,255,255,1.0);
+}
+
+.commit .tooltip{
+  display: none;
+  content: "";
+  opacity: 0;
+  background:rgba(255, 255, 255, .5);
+  border: 2px solid rgba(255, 255, 255,.25);
+  position:fixed;
+  z-index: 9999;
+  width:270px;
+  padding: 20px;
+  overflow:hidden;
+  margin-left: -340px;
+  -webkit-transition: all 150ms ease-in-out;
+}
+
+.commit .bridge{
+  display: none;
+  content: "";
+  opacity: 0;
+  background:rgba(255, 255, 255, .5);
+  border: 2px solid rgba(255, 255, 255,.25);
+  position:absolute;
+  top: 0px;
+  z-index: 9999;
+  width:10px;
+  padding: 5px;
+  overflow:hidden;
+  margin-left: -25px;
+}
+
+.commit:hover > .tooltip {
+  display: block;
+  opacity: 1;
+}
+
+
+.commit:hover > .bridge {
+  display: block;
+  opacity: 0;
+}
+ 
+.prototype-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  z-index: 9999;
+}

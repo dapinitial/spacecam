@@ -1,0 +1,37 @@
+
+.wrapper{
+  opacity:0;
+  visibility:hidden
+}
+
+.owl-carousel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.owl-controls {
+  font-size: 14rem;
+  position: absolute;
+  right: 60px;
+  top: 0;
+}
+
+.owl-prev, .owl-next {
+  background: #1a1a1a;
+  color: rgba(0,0,0,.0);
+  height: 60rem;
+  transition: background .25s ease-out 0s;
+  width: 60rem;
+  &:hover {
+    background: #EA504E !important;
+    transition: background .25s ease-out 0s;
+  }
+}
+
+.owl-item {
+  display: inline-block;
+  float: left;
+}
