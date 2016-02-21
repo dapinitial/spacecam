@@ -1,22 +1,27 @@
 ::-webkit-input-placeholder {
-   color: #eee;
+ color: #eee;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: #eee;
+ color: #eee;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #eee;
+ color: #eee;
 }
 
 :-ms-input-placeholder {
-   color: #eee;
+ color: #eee;
 }
 
 
 input[type='checkbox'] {
   display: none;
+}
+
+.check-options .right-column {
+  line-height: 1;
+  padding: 10px 20px;
 }
 
 .switch-tab{
@@ -73,64 +78,64 @@ input[type='checkbox'] {
 
 input[type='text'] {
   display:block;
-    width: 300px;
-    padding: 15px 0 15px 12px;
-    font-weight: 400;
-    background: #15141d;
-    border: none;
-    outline: none;
-    color: #fff;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-    border: 1px solid rgba(0,0,0,0.3);
-    border-radius: 4px;
-    box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px  1px rgba(255,255,255,0.2);
-    text-indent: 40px;
-    transition: all .3s ease-in-out;
-    position: relative;
-    font-size: 18px;
+  width: 300px;
+  padding: 15px 0 15px 12px;
+  font-weight: 400;
+  background: #15141d;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 4px;
+  box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px  1px rgba(255,255,255,0.2);
+  text-indent: 40px;
+  transition: all .3s ease-in-out;
+  position: relative;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 14px;
   font-family: 'BgReg';
 }
 
 input[type='text']:focus{
-    box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.1);
+  box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.1);
 }
 
 .select-style {
-    display:block;
-    width: 300px;
-    font-weight: 400;
-    color: #377D6A;
-    background: #15141d;
-    border: none;
-    outline: none;
-    color: #fff;
-  padding: 15px 0 15px 12px;
-    border: 1px solid rgba(0,0,0,0.3);
-    border-radius: 4px;
-    box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px  1px rgba(255,255,255,0.2);
-    text-indent: 40px;
-    transition: all .3s ease-in-out;
-    position: relative;
-    font-size: 18px;
+  display:block;
+  width: 300px;
+  font-weight: 400;
+  color: #377D6A;
+  background: #15141d;
+  border: none;
+  outline: none;
+  color: #fff;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 4px;
+  box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px  1px rgba(255,255,255,0.2);
+  transition: all .3s ease-in-out;
+  position: relative;
+  font-size: 18px;
   margin-bottom: 14px;
   font-family: 'BgReg';
 }
 
 .select-style select {
   color: #eee;
-font-size: 18px;
+  font-size: 18px;
   font-family: 'BgReg';
-    border: none;
-    box-shadow: none;
-    background-color: transparent;
-    background-image: none;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+  border: none;
+  box-shadow: none;
+  padding: 15px 0 15px 52px;
+  width: 100%;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .select-style select:focus {
-    outline: none;
+  outline: none;
 }

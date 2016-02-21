@@ -4,7 +4,8 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
-    autoprefixer = require('gulp-autoprefixer');
+    autoprefixer = require('gulp-autoprefixer'),
+    server = require('gulp-express');
 
 // Lint Task
 gulp.task('lint', function() {
@@ -38,11 +39,7 @@ gulp.task('watch', function() {
 
 // Express Task
 gulp.task('express', function() {
-  var express = require('express');
-  var app = express();
-  app.use(express.static(__dirname + '/html'));
-  app.listen(8080, '0.0.0.0');
-  console.log('What happens on 8080 stays on 8080');
+  server.run(['app.js']);
 });
 
 // Default Task
