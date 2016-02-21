@@ -1,7 +1,6 @@
 'use strict';
 
-var DAP = window.DAP || {},
-    owl = $('.owl-carousel');
+var DAP = window.DAP || {};
 
 DAP.pageLoader = function() {
   var $elements = $('body').find('img[src]');
@@ -86,26 +85,15 @@ DAP.pageLoader = function() {
 };
 
 $(document).ready(function() {
-  DAP.pageLoader();
-  $('article').on({
-    click: function() {
-      $('.piece').toggleClass('flipped');
-    }
-  });
-  owl.owlCarousel({
-    touchDrag: false,
-    mouseDrag : false,
-    items: 1,
-    loop: true,
-    onInitialize: function() {
-      console.log('carousel initialized');
-    },
-    startPosition: '#settings',
-    URLhashListener: true
-  });
-  
-  /** navigation
+
+  /** Page Loader Initialization 
     */
+
+  DAP.pageLoader();
+  
+  /** Navigation buttons
+    */
+
   $('.nav-button').on({
     click: function() {
       var self = $(this);    
@@ -120,6 +108,8 @@ $(document).ready(function() {
   });
   
   //removed for now
+  /** Timeline
+    */
   /*
   $('#timeline .commit').click(function() {
     var self = $(this);
@@ -136,14 +126,11 @@ $(document).ready(function() {
 $(window).on({
   resize: function(){
     console.log('window resized');
-    // owl resize refresh code needs to go here
-    /** owl refresh code
-    */
-    owl.trigger('refresh.owl.carousel')
   }
 });
 
-
+/** Save images to DropBox
+  */
 
 ;(function() {
   'use strict';
