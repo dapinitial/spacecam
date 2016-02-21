@@ -308,6 +308,7 @@ button {
   width: 100%; }
   button:hover {
     background-color: #000;
+    border: none;
     color: #fff; }
   button.black-button {
     background: #000;
