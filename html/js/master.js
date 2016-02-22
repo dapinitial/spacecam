@@ -142,18 +142,6 @@ $(document).ready(function() {
      }, 600);
     }
   });
-   
-  /** Shutter Click Event
-    */
-  $('.spacecam-shutter').on({
-    click: function() {
-      Shutter()();
-    }
-  });
-
-
-
-  
 
   //removed for now
   /** Timeline
