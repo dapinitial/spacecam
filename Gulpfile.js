@@ -42,5 +42,8 @@ gulp.task('express', function() {
   server.run(['app.js']);
 });
 
+// Compile assets only
+gulp.task('compile', ['lint', 'sass', 'scripts']);
+
 // Default Task
 gulp.task('default', ['express', 'lint', 'sass', 'scripts', 'watch']);

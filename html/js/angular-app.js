@@ -2,6 +2,7 @@
   'use strict';
 
   var DROPBOX_CLIENT_KEY = '1m07w66d6okvwry',
+      SEND_MMS_ENDPOINT = '/sendMms',
       PIXEL_INTENSITY_CHANGE_THRESHOLD = 0.2,
       FRAME_INTENSITY_CHANGE_THRESHOLD = 0.2;
 
@@ -18,15 +19,6 @@
     $scope.localMediaStream = null;
     $scope.settings = $localStorage;
     $scope.settings.snapshotActions = $scope.settings.snapshotActions || { saveToDropbox: false, sendMms: false };
-
-    $http.get(
-      '/send-mms-endpoint.json'
-    ).then(function(response) {
-      $scope.settings.sendMmsEndpoint = response.data.sendMmsEndpoint;
-      console.log('Got sendMms endpoint: ' + $scope.settings.sendMmsEndpoint);
-    }, function(err) {
-      console.log('Error getting sendMms endpoint: ' + err);
-    });
 
     var linkDropbox = function() {
       if ($scope.dropbox) {
@@ -88,14 +80,12 @@
     });
 
     var sendMms = function(dataUrl) {
-      if (!$scope.settings.carrier
-          || !$scope.settings.number
-          || !$scope.settings.sendMmsEndpoint) {
+      if (!$scope.settings.carrier || !$scope.settings.number) {
         return;
       }
 
       $http.post(
-        $scope.settings.sendMmsEndpoint,
+        SEND_MMS_ENDPOINT,
         {
           carrier: $scope.settings.carrier,
           number: $scope.settings.number,

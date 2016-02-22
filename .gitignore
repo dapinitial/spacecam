@@ -2,3 +2,4 @@ node_modules
 html/js/dist
 html/css/index.css
 mailer-config.json
+html/send-mms-endpoint.json
