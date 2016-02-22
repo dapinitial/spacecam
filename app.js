@@ -28,8 +28,8 @@ app.post('/sendMms', function (req, res) {
   var mail = {
     from: mailerConfig.from,
     to: req.body.number + req.body.carrier,
-    subject: 'New Space Cam Snapshot',
-    text: 'You have a new Space Cam snapshot.',
+    subject: mailerConfig.subject,
+    text: mailerConfig.body,
     attachments: [
       { path: req.body.dataUrl }
     ]
@@ -46,4 +46,6 @@ app.post('/sendMms', function (req, res) {
   });
 });
 
-app.listen(8080, '0.0.0.0');
+var port = process.env.PORT || 8080;
+app.listen(port, '127.0.0.1');
+console.log('express.js server running on http://127.0.0.1:' + port);
