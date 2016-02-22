@@ -9,9 +9,7 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dropbox.js/0.10.2/dropbox.min.js"></script>
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.1/css/material-design-iconic-font.min.css">
-
   <link href="css/index.css" rel="stylesheet">
 
   <title>SpaceCam Surveillance | Koding.com hack.summit()</title>
@@ -185,13 +183,8 @@
         <input id="address" placeholder="Cell Number" type="text" name="address" ng-model="settings.number" />
 
         <div class="select-style">
-<<<<<<< HEAD
-          <select id="provider">
-            <option value="?">Select cellular carrier.</option>
-=======
           <select id="provider" ng-model="settings.carrier">
             <option value="">Select cellular carrier.</option>
->>>>>>> e95aad69ddf43e2a695f9d1c130e4fac98e58aa9
             <option value="@message.alltell.com">AllTel</option>
             <option value="@mms.att.net">AT&amp;T</option>
             <option value="@myboostmobile.com">Boost Mobile</option>
