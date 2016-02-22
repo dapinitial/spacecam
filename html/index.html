@@ -179,12 +179,12 @@
 
       <div class="body line">
 
-        <label for="mms-address">Type the number where you wish to receive images texted to:</label>
+        <label for="mms-address" class="top-label">Type the number where you wish to receive images texted to:</label>
         <input id="address" placeholder="Cell Number" type="text" name="address" ng-model="settings.number" />
 
         <div class="select-style">
           <select id="provider" ng-model="settings.carrier">
-            <option value="">Select cellular carrier.</option>
+            <option value="">Select Cellular Carrier</option>
             <option value="@message.alltell.com">AllTel</option>
             <option value="@mms.att.net">AT&amp;T</option>
             <option value="@myboostmobile.com">Boost Mobile</option>
@@ -233,8 +233,15 @@
 
     </article>
     <article name="camera">
+
+      <div class="title">Camera</div>
+
       <div ng-controller="controller" class="ng-scope">
         <div ng-show="getUserMediaSupported">
+          <div>
+            <video id="cam" ng-click="snapshot();" autoplay="" src="blob:http%3A//localhost/9842aa93-f221-4d1e-a6db-6aac47591c8e"></video>
+            <canvas id="buffer" width="640" height="480"></canvas>
+          </div>
           <div>
             <p>Click on the video to take a snapshot</p>
           </div>
@@ -243,11 +250,6 @@
             <label for="use-shutter">Hide Web Cam Feed / Show Shutter</label>
 
           </div>
-          <div>
-            <video id="cam" ng-click="snapshot();" autoplay="" src="blob:http%3A//localhost/9842aa93-f221-4d1e-a6db-6aac47591c8e"></video>
-            <canvas id="buffer" width="640" height="480"></canvas>
-          </div>
-
         </div>
         <div ng-hide="getUserMediaSupported" class="ng-hide">
           <p>Your browser does not support access to web cam</p>
@@ -256,7 +258,11 @@
 
         </div>
       </article>
-      <article name="manage">Manage Images</article>
+      <article name="manage">
+        
+        <div class="title">Manage Images</div>
+
+      </article>
     </section>
   </div>
 

@@ -276,6 +276,32 @@ $(document).ready(function() {
       }
     }
   });
+
+
+  $('.nav-button.manage').on({
+    click: function() {
+      $('html, body').animate({
+       'scrollTop':   $('[name=manage]').offset().top
+     }, 600);
+    }
+  });
+
+   $('.nav-button.camera').on({
+    click: function() {
+      $('html, body').animate({
+       'scrollTop':   $('[name=camera]').offset().top
+     }, 600);
+    }
+  });
+
+    $('.nav-button.settings').on({
+    click: function() {
+      $('html, body').animate({
+       'scrollTop':   $('[name=settings]').offset().top
+     }, 600);
+    }
+  });
+   
   
   //removed for now
   /** Timeline

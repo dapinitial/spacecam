@@ -19,6 +19,11 @@ input[type='checkbox'] {
   display: none;
 }
 
+.top-label {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .check-options .right-column {
   line-height: 1;
   padding: 10px 20px;
@@ -84,6 +89,7 @@ input[type='text'] {
   background: #15141d;
   border: none;
   outline: none;
+  letter-spacing: .5px;
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
   border: 1px solid rgba(0,0,0,0.3);
@@ -127,6 +133,7 @@ input[type='text']:focus{
   font-family: 'BgReg';
   border: none;
   box-shadow: none;
+  letter-spacing: .5px;
   padding: 15px 0 15px 52px;
   width: 100%;
   background-color: transparent;

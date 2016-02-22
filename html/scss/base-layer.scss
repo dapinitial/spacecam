@@ -124,3 +124,9 @@ article {
      transition: background linear .65s;
    }*/
 }
+
+.title {
+  @include line;
+  color: #fafafa;
+  margin-bottom: 20rem;
+}
