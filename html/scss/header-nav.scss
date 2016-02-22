@@ -70,7 +70,11 @@ header {
 
 .nav-button svg.icon {
   display: block;
-  fill: rgba(0, 0, 0, .5);
+  fill: #848484;
+  //fill: #EA504E;
+  //animation-name: fill;
+  //animation-duration: 10s;
+  //animation-iteration-count: infinite;
   transition: all .35s linear;
 }
 

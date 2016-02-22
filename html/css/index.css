@@ -194,6 +194,14 @@ table {
   100% {
     opacity: 1; } }
 
+@keyframes color-fill {
+  0% {
+    fill: #5500FF; }
+  50% {
+    fill: white; }
+  100% {
+    fill: #F8E71C; } }
+
 /** Declaring the viewport
  */
 @-o-viewport {
@@ -609,7 +617,7 @@ header {
 
 .nav-button svg.icon {
   display: block;
-  fill: rgba(0, 0, 0, 0.5);
+  fill: #848484;
   transition: all .35s linear; }
 
 .icon.inset-shadow g {

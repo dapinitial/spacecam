@@ -146,3 +146,19 @@
     opacity: 1;
   }
 }
+
+
+@keyframes color-fill {
+  0% {
+    fill: #5500FF;
+  }
+  50% {
+    fill: white;
+  }
+  100% {
+    fill: #F8E71C;
+  }
+}
+
+
+
