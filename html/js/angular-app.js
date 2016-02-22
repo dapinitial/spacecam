@@ -20,6 +20,14 @@
     $scope.settings = $localStorage;
     $scope.settings.snapshotActions = $scope.settings.snapshotActions || { saveToDropbox: false, sendMms: false };
 
+    $scope.hasValidSnapshotAction = function() {
+      return $scope.settings.snapshotActions.saveToDropbox ||
+             ($scope.settings.snapshotActions.sendMms &&
+              $scope.settings.carrier &&
+              $scope.settings.number &&
+              $scope.settings.number.match(/\d+/));
+    };
+
     var linkDropbox = function() {
       if ($scope.dropbox) {
         return;

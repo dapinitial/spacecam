@@ -38,7 +38,7 @@
             </g>
           </svg>
         </a>
-        <a href="#camera" class="nav-button camera">
+        <a href="#camera" class="nav-button camera" ng-class="{'green-indicator': hasValidSnapshotAction()}">
           <!-- DIFF VIEW -->
           <svg class="icon shutter inset-shadow active" viewBox="0 0 90 90">
             <g>
@@ -473,10 +473,9 @@
           </ul>
         </div>
       <div ng-show="getUserMediaSupported">
-     
-       
         <video id="cam" ng-click="snapshot();" autoplay></video>
-          <canvas id="buffer" width="640" height="480"></canvas>
+        <canvas id="buffer" width="640" height="480"></canvas>
+      </div>
 
       <div>
         <input type="checkbox" id="use-shutter" />
