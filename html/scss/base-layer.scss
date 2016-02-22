@@ -51,6 +51,7 @@ body {
     color: #f2f2f2;
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     height: 100%;
+    overflow: auto;
     @include too-small {
       display: none;
     }
