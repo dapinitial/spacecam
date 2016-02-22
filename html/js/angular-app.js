@@ -25,7 +25,7 @@
              ($scope.settings.snapshotActions.sendMms &&
               $scope.settings.carrier &&
               $scope.settings.number &&
-              $scope.settings.number.match(/\d+/));
+              $scope.settings.number.match(/^\d+$/));
     };
 
     var linkDropbox = function() {
