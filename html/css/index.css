@@ -45,7 +45,7 @@ table {
   display: inline-block;
   float: left; }
 
-.select-style::before {
+.select-style::before, #loader-percentage {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility; }
@@ -194,13 +194,23 @@ table {
   100% {
     opacity: 1; } }
 
-@keyframes color-fill {
+@-webkit-keyframes indicator-fill {
   0% {
-    fill: #5500FF; }
+    border-left-color: #222; }
   50% {
-    fill: white; }
+    border-left-color: #B8E986; }
   100% {
-    fill: #F8E71C; } }
+    border-left-color: #80FF00; } }
+
+@keyframes indicator-fill {
+  0% {
+    border-left-color: #222; }
+  50% {
+    border-left-color: #B8E986; }
+  75% {
+    border-left-color: #80FF00; }
+  100% {
+    border-left-color: #222; } }
 
 /** Declaring the viewport
  */
@@ -527,8 +537,8 @@ input[type='text']:focus {
   bottom: 8px;
   left: 15px;
   color: #FFF;
-  font-size: 18px;
-  font-weight: 400; }
+  font-size: 16px;
+  font-weight: 800; }
 
 #loader-percentage-line {
   width: 2px;
@@ -614,6 +624,11 @@ header {
     box-shadow: inset 2rem 2rem 2rem 0, 0, 0, 1;
     color: #444;
     font-weight: normal; }
+
+.green-indicator {
+  animation-name: indicator-fill;
+  animation-duration: 10s;
+  animation-iteration-count: infinite; }
 
 .nav-button svg.icon {
   display: block;
@@ -757,7 +772,7 @@ canvas#buffer {
 
 #lens {
   position: absolute;
-  top: 85px;
+  top: 95px;
   left: 70px;
   user-select: none; }
 

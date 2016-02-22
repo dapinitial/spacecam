@@ -11,12 +11,13 @@
 }
 
 #loader-percentage {   
+  @include fontSmoothing;
   position: absolute;
   bottom: 8px;
   left: 15px;
   color: #FFF;
-  font-size: 18px;
-  font-weight: 400
+  font-size: 16px;
+  font-weight: 800;
 }
 
 #loader-percentage-line {

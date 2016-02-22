@@ -67,6 +67,11 @@ header {
   }
 }
 
+.green-indicator {
+  animation-name: indicator-fill;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
 
 .nav-button svg.icon {
   display: block;

@@ -148,15 +148,32 @@
 }
 
 
-@keyframes color-fill {
+@-webkit-keyframes indicator-fill {
   0% {
-    fill: #5500FF;
+    border-left-color: #222;
   }
   50% {
-    fill: white;
+    border-left-color: #B8E986;
   }
   100% {
-    fill: #F8E71C;
+    border-left-color: #80FF00;
+  }
+}
+
+
+
+@keyframes indicator-fill {
+  0% {
+    border-left-color: #222;
+  }
+  50% {
+    border-left-color: #B8E986;
+  }
+  75% {
+    border-left-color: #80FF00;
+  }
+  100% {
+    border-left-color: #222;
   }
 }
 

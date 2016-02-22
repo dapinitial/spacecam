@@ -151,6 +151,24 @@ $(document).ready(function() {
     }
   });
 
+  /** Green Indicator when tranmittable
+    */
+
+  $('input, select option').on({
+    change: function(e) {
+      if ($('#address').val() !== 0 && $('select option:selected').text() !== 'Select Cellular Carrier') {
+        console.log('working');
+        $('.nav-button.camera').addClass('green-indicator');
+      } else {
+        console.log('not yet');
+        $('.nav-button.camera').removeClass('green-indicator');
+      }
+    }
+  });
+
+
+  
+
   //removed for now
   /** Timeline
     */

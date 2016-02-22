@@ -191,7 +191,7 @@
 
     </div>
     <div class="body">
-      <label for="mms-address" class="top-label">Enter the number where you wish to receive the surveillance footage. After you've selected your cell phone carrier and supplied an acceptable cell number a green light should appear on the nav bar letting you know you're transmitting and ready. </label>
+      <label for="mms-address" class="top-label">Enter the number where you wish to receive the surveillance footage. After you've selected your cell phone carrier and supplied an acceptable cell number a green light should appear on the nav bar letting you know you're transmitting and ready. To turn off, simply close this browser tab.</label>
       <input id="address" placeholder="Cell Number" type="text" name="address" ng-model="settings.number" />
       <div class="select-style">
         <select id="provider" ng-model="settings.carrier">
@@ -256,7 +256,7 @@
     </div>
     <div class="body">
       <div class="title">
-        <p>Click on the video to take a snapshot</p>
+        <p>Click on the video to take a snapshot, or selfie, depending on your pref.</p>
       </div>
        <div id="lens" ng-show="getUserMediaSupported">
             <svg version="1.1" id="spaceCam-lens" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -568,6 +568,7 @@
 <script src="js/canvas-to-blob.min.js"></script>
 <script src="js/master.js"></script>
 <script src="js/angular-app.js"></script>
+
 </body>
 </html>
 <!-- layout inspired heavily by the work of alessioatzeni -->
