@@ -150,13 +150,16 @@
 
 @-webkit-keyframes indicator-fill {
   0% {
-    border-left-color: #222;
+    background-color: #B8E986;
   }
   50% {
-    border-left-color: #B8E986;
+    background-color: #80FF00;
+  }
+  75% {
+    background-color: #B8E986;
   }
   100% {
-    border-left-color: #80FF00;
+    background-color: #80FF00;
   }
 }
 
@@ -164,16 +167,16 @@
 
 @keyframes indicator-fill {
   0% {
-    border-left-color: #222;
+    background-color: #B8E986;
   }
   50% {
-    border-left-color: #B8E986;
+    background-color: #80FF00;
   }
   75% {
-    border-left-color: #80FF00;
+    background-color: #B8E986;
   }
   100% {
-    border-left-color: #222;
+    background-color: #80FF00;
   }
 }
 

@@ -14,18 +14,16 @@ header {
   border: 0;
   border-bottom: 1px solid #1a1a1a;
   border-top: 1px solid #2e2e2e;
-  border-left: 3px solid #000;
   cursor: pointer;
   display: block;
   height: 60rem;
   outline: 0;
   padding: 20rem;
   position: relative;
-  transition: background .25s ease-out 0s, border-left .2s linear;
+  transition: background .25s ease-out 0s;
   width: 100%;
   &:hover {
     background: rgba(255,255,255,.05);
-    border-left: 3px solid #202020;
   } &:last-child::after {
     background: #2e2e2e;
     bottom: -2px;
@@ -39,10 +37,28 @@ header {
   }
 }
 
+.nav-button.green-indicator {
+    &::after {
+      border-radius: 50%;
+      content: '';
+      display: block;
+      height: 6rem;
+      width: 6rem;
+      padding: 4rem;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 999;
+      animation-name: indicator-fill;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      transition: linear background-color .2s;
+    }
+  }
+
 .nav-button.active {
   background: rgba(255,255,255,.05);
-  //border-left: 3px solid #fff;
-  transition: background .25s ease-out 0s, border-left .2s linear;
+  transition: background .25s ease-out 0s;
 }
 
 .logo {
@@ -65,12 +81,6 @@ header {
     font-weight: normal;
     //padding-left: 12rem;
   }
-}
-
-.green-indicator {
-  animation-name: indicator-fill;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
 }
 
 .nav-button svg.icon {

@@ -196,21 +196,23 @@ table {
 
 @-webkit-keyframes indicator-fill {
   0% {
-    border-left-color: #222; }
+    background-color: #B8E986; }
   50% {
-    border-left-color: #B8E986; }
+    background-color: #80FF00; }
+  75% {
+    background-color: #B8E986; }
   100% {
-    border-left-color: #80FF00; } }
+    background-color: #80FF00; } }
 
 @keyframes indicator-fill {
   0% {
-    border-left-color: #222; }
+    background-color: #B8E986; }
   50% {
-    border-left-color: #B8E986; }
+    background-color: #80FF00; }
   75% {
-    border-left-color: #80FF00; }
+    background-color: #B8E986; }
   100% {
-    border-left-color: #222; } }
+    background-color: #80FF00; } }
 
 /** Declaring the viewport
  */
@@ -580,18 +582,16 @@ header {
   border: 0;
   border-bottom: 1px solid #1a1a1a;
   border-top: 1px solid #2e2e2e;
-  border-left: 3px solid #000;
   cursor: pointer;
   display: block;
   height: 60rem;
   outline: 0;
   padding: 20rem;
   position: relative;
-  transition: background .25s ease-out 0s, border-left .2s linear;
+  transition: background .25s ease-out 0s;
   width: 100%; }
   .nav-button:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border-left: 3px solid #202020; }
+    background: rgba(255, 255, 255, 0.05); }
   .nav-button:last-child::after {
     background: #2e2e2e;
     bottom: -2px;
@@ -603,9 +603,25 @@ header {
     position: absolute;
     width: 100%; }
 
+.nav-button.green-indicator::after {
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 6rem;
+  width: 6rem;
+  padding: 4rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+  animation-name: indicator-fill;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  transition: linear background-color .2s; }
+
 .nav-button.active {
   background: rgba(255, 255, 255, 0.05);
-  transition: background .25s ease-out 0s, border-left .2s linear; }
+  transition: background .25s ease-out 0s; }
 
 .logo {
   bottom: 115px;
@@ -624,11 +640,6 @@ header {
     box-shadow: inset 2rem 2rem 2rem 0, 0, 0, 1;
     color: #444;
     font-weight: normal; }
-
-.green-indicator {
-  animation-name: indicator-fill;
-  animation-duration: 10s;
-  animation-iteration-count: infinite; }
 
 .nav-button svg.icon {
   display: block;
@@ -777,7 +788,7 @@ canvas#buffer {
   user-select: none; }
 
 svg#spaceCam-lens {
-  opacity: .65; }
+  opacity: .3; }
 
 .spacecam-shutter {
   cursor: pointer;
