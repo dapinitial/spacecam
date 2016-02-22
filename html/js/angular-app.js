@@ -148,6 +148,8 @@
     };
 
     $scope.snapshot = function() {
+      Shutter()();
+
       if ($scope.settings.snapshotActions.saveToDropbox) {
         buffer.toBlob(function(blob) {
           saveToDropbox(blob);
