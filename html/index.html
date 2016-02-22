@@ -182,11 +182,16 @@
       <div class="body line">
 
         <label for="mms-address">Type the number where you wish to receive images texted to:</label>
-        <input id="address" placeholder="Cell Number" type="text" name="address" ng-model="address" />
+        <input id="address" placeholder="Cell Number" type="text" name="address" ng-model="settings.number" />
 
         <div class="select-style">
+<<<<<<< HEAD
           <select id="provider">
             <option value="?">Select cellular carrier.</option>
+=======
+          <select id="provider" ng-model="settings.carrier">
+            <option value="">Select cellular carrier.</option>
+>>>>>>> e95aad69ddf43e2a695f9d1c130e4fac98e58aa9
             <option value="@message.alltell.com">AllTel</option>
             <option value="@mms.att.net">AT&amp;T</option>
             <option value="@myboostmobile.com">Boost Mobile</option>
@@ -319,6 +324,7 @@
  </svg>
  <script src="js/canvas-to-blob.min.js"></script>
  <script src="js/master.js"></script>
+ <script src="js/angular-app.js"></script>
 </body>
 </html>
 <!-- layout inspired heavily by the work of alessioatzeni -->
