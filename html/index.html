@@ -171,9 +171,27 @@
 -->
 <section class="swiper">
   <article name="settings">
-    <div class="title">Settings</div>
+    <div class="title">
+
+<a href="#settings" class="nav-button settings active" style="
+    display: inline;
+    background: none;
+    margin-right: 14px;
+    border: none;
+">
+          <!-- SETTINGS -->
+          <svg class="icon settings inset-shadow" viewBox="0 0 59 55">
+            <g>
+              <rect width="59px" height="55px"></rect>
+            </g>
+          </svg>
+        </a>
+
+    Settings
+
+    </div>
     <div class="body">
-      <label for="mms-address" class="top-label">Type the number where you wish to receive images texted to:</label>
+      <label for="mms-address" class="top-label">Enter the number where you wish to receive the surveillance footage. After you've selected your cell phone carrier and supplied an acceptable cell number a green light should appear on the nav bar letting you know you're transmitting and ready. </label>
       <input id="address" placeholder="Cell Number" type="text" name="address" ng-model="settings.number" />
       <div class="select-style">
         <select id="provider" ng-model="settings.carrier">
@@ -202,9 +220,8 @@
           <label for="checkbox-dropbox" class="switch-tab"></label>
         </div>
         <div class="right-column">Save to DropBox
-          <br />
-          <span ng-show="dropbox.isAuthenticated()"> 
-           (Signed in as {{dropboxAccountInfo.name}}, <a href="" ng-click="unlinkDropbox();">Sign out</a>)</span>
+          <span style="font-size: 14rem; font-style: italic;" ng-show="dropbox.isAuthenticated()"> 
+           (Signed in as {{dropboxAccountInfo.name}}, <a style="display: inline;" href="" ng-click="unlinkDropbox();">Sign out</a>)</span>
          </div>
        </div>    
        <div class="check-options line">
@@ -217,7 +234,26 @@
     </div>
   </article>
   <article name="camera">
-    <div class="title">Camera</div>
+    <div class="title">
+
+    <a href="#camera" class="nav-button camera active" style="
+    display: inline;
+    background: none;
+    margin-right: 14px;
+    border: none;
+    ">
+          <!-- DIFF VIEW -->
+          <svg class="icon shutter inset-shadow active" viewBox="0 0 90 90">
+            <g>
+              <rect width="90px" height="90px"></rect>
+            </g>
+          </svg>
+        </a>
+
+    Camera
+
+
+    </div>
     <div class="body">
       <div class="title">
         <p>Click on the video to take a snapshot</p>
@@ -454,7 +490,25 @@
     </div>
   </article>
   <article name="manage">
-    <div class="title">Manage Images</div>
+    <div class="title">
+
+    <a href="#manage" class="nav-button manage active"  style="
+    display: inline;
+    background: none;
+    margin-right: 14px;
+    border: none;
+    ">
+          <!-- SEARCH -->
+          <svg class="icon diff-view inset-shadow" viewBox="0 0 59 55">
+            <g>
+              <rect width="59px" height="55px"></rect>
+            </g>
+          </svg>
+        </a>
+
+    Manage Images
+
+    </div>
     <div class="body">
       <p>This feature will be in the next release!</p>
     </div>

@@ -557,9 +557,7 @@ header {
   top: 0;
   right: 0; }
 
-.nav-button,
-.owl-prev,
-.owl-next {
+.nav-button {
   background: none;
   border: 0;
   border-bottom: 1px solid #1a1a1a;
@@ -573,14 +571,10 @@ header {
   position: relative;
   transition: background .25s ease-out 0s, border-left .2s linear;
   width: 100%; }
-  .nav-button:hover,
-  .owl-prev:hover,
-  .owl-next:hover {
+  .nav-button:hover {
     background: rgba(255, 255, 255, 0.05);
     border-left: 3px solid #202020; }
-  .nav-button:last-child::after,
-  .owl-prev:last-child::after,
-  .owl-next:last-child::after {
+  .nav-button:last-child::after {
     background: #2e2e2e;
     bottom: -2px;
     content: ' ';
@@ -593,7 +587,6 @@ header {
 
 .nav-button.active {
   background: rgba(255, 255, 255, 0.05);
-  border-left: 3px solid #fff;
   transition: background .25s ease-out 0s, border-left .2s linear; }
 
 .logo {

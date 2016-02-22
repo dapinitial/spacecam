@@ -9,9 +9,7 @@ header {
   right: 0;
 }
 
-.nav-button, 
-.owl-prev, 
-.owl-next {
+.nav-button {
   background: none;
   border: 0;
   border-bottom: 1px solid #1a1a1a;
@@ -43,7 +41,7 @@ header {
 
 .nav-button.active {
   background: rgba(255,255,255,.05);
-  border-left: 3px solid #fff;
+  //border-left: 3px solid #fff;
   transition: background .25s ease-out 0s, border-left .2s linear;
 }
 
