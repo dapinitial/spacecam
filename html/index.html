@@ -200,7 +200,7 @@
 
         <div class="check-options line">
           <div class="left-column">
-            <input type="checkbox" id="checkbox-autosave" ng-model="settings.autosave" class="ng-pristine ng-untouched ng-valid ng-empty switch">
+            <input type="checkbox" id="checkbox-autosave" ng-model="settings.autosave" class="switch">
             <label for="checkbox-autosave" class="switch-tab"></label>
           </div>
           <div class="right-column">Automatically takes snapshot when motion detected</div>
@@ -208,19 +208,19 @@
 
         <div class="check-options line">
           <div class="left-column">   
-            <input type="checkbox" id="checkbox-dropbox" ng-model="settings.snapshotActions.saveToDropbox" class="ng-pristine ng-untouched ng-valid ng-empty switch">
+            <input type="checkbox" id="checkbox-dropbox" ng-model="settings.snapshotActions.saveToDropbox" class="switch">
             <label for="checkbox-dropbox" class="switch-tab"></label>
           </div>
           <div class="right-column">Save to DropBox
             <br />
-            <span ng-show="dropbox.isAuthenticated()" class="ng-binding ng-hide"> 
-             (Signed in as , <a href="" ng-click="unlinkDropbox();">Sign out</a>)</span>
+            <span ng-show="dropbox.isAuthenticated()"> 
+             (Signed in as {{dropboxAccountInfo.name}}, <a href="" ng-click="unlinkDropbox();">Sign out</a>)</span>
            </div>
          </div>    
 
          <div class="check-options line">
           <div class="left-column">      
-            <input type="checkbox" id="checkbox-mms" ng-model="settings.snapshotActions.sendMms" class="ng-pristine ng-untouched ng-valid ng-not-empty switch">
+            <input type="checkbox" id="checkbox-mms" ng-model="settings.snapshotActions.sendMms" class="switch">
             <label for="checkbox-mms" class="switch-tab"></label>
           </div>
           <div class="right-column">Send MMS</div>
@@ -236,10 +236,10 @@
 
       <div class="title">Camera</div>
 
-      <div ng-controller="controller" class="ng-scope">
+      <div>
         <div ng-show="getUserMediaSupported">
           <div>
-            <video id="cam" ng-click="snapshot();" autoplay="" src="blob:http%3A//localhost/9842aa93-f221-4d1e-a6db-6aac47591c8e"></video>
+            <video id="cam" ng-click="snapshot();" autoplay></video>
             <canvas id="buffer" width="640" height="480"></canvas>
           </div>
           <div>
@@ -251,10 +251,10 @@
 
           </div>
         </div>
-        <div ng-hide="getUserMediaSupported" class="ng-hide">
+        <div ng-hide="getUserMediaSupported">
           <p>Your browser does not support access to web cam</p>
         </div>
-        <div ng-show="errorMessage" class="ng-binding ng-hide">
+        <div ng-show="errorMessage">
 
         </div>
       </article>

@@ -1,2 +1,3 @@
 node_modules
-html/js/dist/*.js
+html/js/dist
+mailer-config.json
