@@ -444,8 +444,8 @@
 
       <div>
         <input type="checkbox" id="use-shutter" />
-        <label for="use-shutter">Hide Web Cam Feed / Show Shutter</label>
-      </div>
+<!--         <label for="use-shutter">Hide Web Cam Feed / Show Shutter</label>
+ -->      </div>
     </div>
     <div ng-hide="getUserMediaSupported">
       <p>Your browser does not support access to web cam</p>
@@ -489,10 +489,9 @@
     </filter>
 
     <!-- circle clip path -->
-    <clippath id="cp-circle">
-      <circle r="180" cx="50%" cy="42%"></circle>
-    </clippath>
-  
+    <clipPath id="circleClipPath"> 
+      <circle cx="260" cy="200" r="110" />
+    </clipPath>
     <!-- DIFF VIEW SVG CLIP PATH -->
     <clipPath id="diff-view-path" clip-rule="evenodd">
       <path d="M17.19,7.349 C18.753,7.349 20.019,8.626 20.019,10.202 C20.019,11.777 18.752,13.056 17.19,13.056 C15.628,13.056 14.361,11.778 14.361,10.202 C14.361,8.625 15.627,7.349 17.19,7.349 L17.19,7.349 L17.19,7.349 Z"></path>

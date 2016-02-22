@@ -1,12 +1,16 @@
 canvas#buffer {
 	display: none;
-	clip-path: url(#cp-circle);
-}
+	position: relative;
+	z-index: -1;
+	-webkit-clip-path: url(#circleClipPath);
+	}
 
 #cam {
 	margin-bottom: 20px;
-	width: 100%;
-	clip-path: url(#cp-circle);
+	position: relative;
+	z-index: -1;
+	width: 500px;
+	-webkit-clip-path: url(#circleClipPath);
 }
 
 #lens {
@@ -17,6 +21,7 @@ canvas#buffer {
 }
 
 svg#spaceCam-lens {
+	opacity: .65;
 }
 
 .spacecam-shutter {
