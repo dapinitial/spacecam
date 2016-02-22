@@ -84,6 +84,18 @@ DAP.pageLoader = function() {
   });
 };
 
+
+function Shutter() {
+  return function () {
+   setTimeout(function(){
+    $('.spacecam-shutter').addClass('snapping');
+    setTimeout(function(){
+      $('.spacecam-shutter').removeClass('snapping');
+    }, 1400);
+  }, 0);   
+  }
+}
+
 $(document).ready(function() {
 
   /** Page Loader Initialization 
@@ -106,7 +118,6 @@ $(document).ready(function() {
       }
     }
   });
-
 
   $('.nav-button.manage').on({
     click: function() {
@@ -132,7 +143,14 @@ $(document).ready(function() {
     }
   });
    
-  
+  /** Shutter Click Event
+    */
+  $('.spacecam-shutter').on({
+    click: function() {
+      Shutter()();
+    }
+  });
+
   //removed for now
   /** Timeline
     */

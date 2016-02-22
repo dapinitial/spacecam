@@ -125,8 +125,16 @@ article {
    }*/
 }
 
+.body {
+  @include line;
+  border: 1px solid rgba(0,0,0,.5);
+  margin-right: 40px;
+  padding: 40px;
+}
+
 .title {
   @include line;
   color: #fafafa;
   margin-bottom: 20rem;
 }
+

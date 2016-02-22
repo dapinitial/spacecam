@@ -21,11 +21,12 @@ input[type='checkbox'] {
 
 .top-label {
   display: block;
+  line-height: 24px;
   margin-bottom: 20px;
 }
 
 .check-options .right-column {
-  line-height: 1;
+  line-height: 24px;
   padding: 10px 20px;
 }
 
@@ -83,7 +84,7 @@ input[type='checkbox'] {
 
 input[type='text'] {
   display:block;
-  width: 300px;
+  width: 100%;
   padding: 15px 0 15px 12px;
   font-weight: 400;
   background: #15141d;
@@ -96,7 +97,6 @@ input[type='text'] {
   border-radius: 4px;
   box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px  1px rgba(255,255,255,0.2);
   text-indent: 40px;
-  transition: all .3s ease-in-out;
   position: relative;
   font-size: 18px;
   font-weight: 600;
@@ -110,7 +110,7 @@ input[type='text']:focus{
 
 .select-style {
   display:block;
-  width: 300px;
+  width: 100%;
   font-weight: 400;
   color: #377D6A;
   background: #15141d;
@@ -120,11 +120,17 @@ input[type='text']:focus{
   border: 1px solid rgba(0,0,0,0.3);
   border-radius: 4px;
   box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px  1px rgba(255,255,255,0.2);
-  transition: all .3s ease-in-out;
   position: relative;
   font-size: 18px;
   margin-bottom: 14px;
   font-family: 'BgReg';
+  &::before {
+    @include icon;
+    content: '\f2f9';
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
 }
 
 .select-style select {
