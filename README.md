@@ -4,7 +4,7 @@
 
 A hackathon project for Koding.com's hack.summit() Feburary 21, 2016 by SpaceLabForever.com
 
-** IMPORTANT!!! YOU MUST click PROCEED ANYWAYS!! Yes, it is unsecured, Koding.com was not providing certificates and we didn't want to bend the rules. This is not malicious. **
+> IMPORTANT!!! YOU MUST click PROCEED ANYWAYS!! Yes, it is unsecured, Koding.com was not providing certificates and we didn't want to bend the rules. This is not malicious. **
 
 ##"Who needs additional equipment and apps? You have a web browser and a computer with a camera... That's all you need! Do more with the technology that you already have!  Just say where would you like your surveilance images sent!"
 
