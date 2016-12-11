@@ -14,6 +14,17 @@ A hackathon project for Koding.com's hack.summit() Feburary 21, 2016 by SpaceLab
 2. Find the directory, wherever you placed it in your favorite command prompt.
 3. type npm install
 4. goto the localhost:8080
+5. **touch mailer-config.JSON** and update the values below:
+
+mailer-config.json
+{
+  "user": "someMailAddress@gmail.com",
+  "pass": "u298djx2dj93m",
+  "from": "Space Cam <someMailAddress@gmail.com>",
+  "subject": "subject of message",
+  "body": "body of message"
+}
+
 
 ** On some servers you need a security certificate **
 
