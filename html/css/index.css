@@ -56,6 +56,422 @@ table {
   display: inline-block;
   font: normal normal normal 30rem/1 'Material-Design-Iconic-Font'; }
 
+@media (max-width: 299px) {
+  /**
+  body {
+    //font-size: $font-size;
+    //line-height: ($font-size * $ratio);
+  }
+
+  h1 {
+    //font-size: ((($font-size * $ratio) * $ratio) * $ratio);
+    //line-height: ($font-size * $ratio) * 3;
+  }
+
+  h2 {
+    //font-size: (($font-size * $ratio) * $ratio);
+    //line-height: ($font-size * $ratio) * 2;
+  }
+
+  h3 {
+    //font-size: $font-size * $ratio;
+    //line-height: ($font-size * $ratio);
+  }
+
+  h4 {
+    //font-size: $font-size;
+    //line-height: ($font-size * $ratio);
+  }
+
+  p {
+    //font-size: $font-size;
+  }
+
+  a {
+    //font-size: $font-size;
+  }
+
+  button {
+    //font-size: $font-size;
+  }
+
+  .heading {
+    //font-size: $font-size;
+  }*/
+  /*.app-banner {
+    font-size: $font-size;
+    padding: round($padding * .88)  // top
+             round($padding * .88)  // right
+             round($padding * .88)  // bottom
+             round($padding * 3.0);    // left
+  }
+
+  */ }
+
+@media (min-width: 300px) {
+  /**
+  body {
+    //font-size: $font-size;
+    //line-height: ($font-size * $ratio);
+  }
+
+  h1 {
+    //font-size: ((($font-size * $ratio) * $ratio) * $ratio);
+    //line-height: ($font-size * $ratio) * 3;
+  }
+
+  h2 {
+    //font-size: (($font-size * $ratio) * $ratio);
+    //line-height: ($font-size * $ratio) * 2;
+  }
+
+  h3 {
+    //font-size: $font-size * $ratio;
+    //line-height: ($font-size * $ratio);
+  }
+
+  h4 {
+    //font-size: $font-size;
+    //line-height: ($font-size * $ratio);
+  }
+
+  p {
+    //font-size: $font-size;
+  }
+
+  a {
+    //font-size: $font-size;
+  }
+
+  button {
+    //font-size: $font-size;
+  }
+
+  .heading {
+    //font-size: $font-size;
+  }*/
+  /*.app-banner {
+    font-size: $font-size;
+    padding: round($padding * .88)  // top
+             round($padding * .88)  // right
+             round($padding * .88)  // bottom
+             round($padding * 3.0);    // left
+  }
+
+  */ }
+
+@media (min-width: 600px) {
+  /**
+  body {
+    //font-size: $font-size;
+    //line-height: ($font-size * $ratio);
+  }
+
+  h1 {
+    //font-size: ((($font-size * $ratio) * $ratio) * $ratio);
+    //line-height: ($font-size * $ratio) * 3;
+  }
+
+  h2 {
+    //font-size: (($font-size * $ratio) * $ratio);
+    //line-height: ($font-size * $ratio) * 2;
+  }
+
+  h3 {
+    //font-size: $font-size * $ratio;
+    //line-height: ($font-size * $ratio);
+  }
+
+  h4 {
+    //font-size: $font-size;
+    //line-height: ($font-size * $ratio);
+  }
+
+  p {
+    //font-size: $font-size;
+  }
+
+  a {
+    //font-size: $font-size;
+  }
+
+  button {
+    //font-size: $font-size;
+  }
+
+  .heading {
+    //font-size: $font-size;
+  }*/
+  /*.app-banner {
+    font-size: $font-size;
+    padding: round($padding * .88)  // top
+             round($padding * .88)  // right
+             round($padding * .88)  // bottom
+             round($padding * 3.0);    // left
+  }
+
+  */ }
+
+@media (min-width: 800px) {
+  /**
+  body {
+    //font-size: $font-size;
+    //line-height: ($font-size * $ratio);
+  }
+
+  h1 {
+    //font-size: ((($font-size * $ratio) * $ratio) * $ratio);
+    //line-height: ($font-size * $ratio) * 3;
+  }
+
+  h2 {
+    //font-size: (($font-size * $ratio) * $ratio);
+    //line-height: ($font-size * $ratio) * 2;
+  }
+
+  h3 {
+    //font-size: $font-size * $ratio;
+    //line-height: ($font-size * $ratio);
+  }
+
+  h4 {
+    //font-size: $font-size;
+    //line-height: ($font-size * $ratio);
+  }
+
+  p {
+    //font-size: $font-size;
+  }
+
+  a {
+    //font-size: $font-size;
+  }
+
+  button {
+    //font-size: $font-size;
+  }
+
+  .heading {
+    //font-size: $font-size;
+  }*/
+  /*.app-banner {
+    font-size: $font-size;
+    padding: round($padding * .88)  // top
+             round($padding * .88)  // right
+             round($padding * .88)  // bottom
+             round($padding * 3.0);    // left
+  }
+
+  */ }
+
+@media (min-width: 1000px) {
+  /**
+  body {
+    //font-size: $font-size;
+    //line-height: ($font-size * $ratio);
+  }
+
+  h1 {
+    //font-size: ((($font-size * $ratio) * $ratio) * $ratio);
+    //line-height: ($font-size * $ratio) * 3;
+  }
+
+  h2 {
+    //font-size: (($font-size * $ratio) * $ratio);
+    //line-height: ($font-size * $ratio) * 2;
+  }
+
+  h3 {
+    //font-size: $font-size * $ratio;
+    //line-height: ($font-size * $ratio);
+  }
+
+  h4 {
+    //font-size: $font-size;
+    //line-height: ($font-size * $ratio);
+  }
+
+  p {
+    //font-size: $font-size;
+  }
+
+  a {
+    //font-size: $font-size;
+  }
+
+  button {
+    //font-size: $font-size;
+  }
+
+  .heading {
+    //font-size: $font-size;
+  }*/
+  /*.app-banner {
+    font-size: $font-size;
+    padding: round($padding * .88)  // top
+             round($padding * .88)  // right
+             round($padding * .88)  // bottom
+             round($padding * 3.0);    // left
+  }
+
+  */ }
+
+@media (min-width: 1200px) {
+  /**
+  body {
+    //font-size: $font-size;
+    //line-height: ($font-size * $ratio);
+  }
+
+  h1 {
+    //font-size: ((($font-size * $ratio) * $ratio) * $ratio);
+    //line-height: ($font-size * $ratio) * 3;
+  }
+
+  h2 {
+    //font-size: (($font-size * $ratio) * $ratio);
+    //line-height: ($font-size * $ratio) * 2;
+  }
+
+  h3 {
+    //font-size: $font-size * $ratio;
+    //line-height: ($font-size * $ratio);
+  }
+
+  h4 {
+    //font-size: $font-size;
+    //line-height: ($font-size * $ratio);
+  }
+
+  p {
+    //font-size: $font-size;
+  }
+
+  a {
+    //font-size: $font-size;
+  }
+
+  button {
+    //font-size: $font-size;
+  }
+
+  .heading {
+    //font-size: $font-size;
+  }*/
+  /*.app-banner {
+    font-size: $font-size;
+    padding: round($padding * .88)  // top
+             round($padding * .88)  // right
+             round($padding * .88)  // bottom
+             round($padding * 3.0);    // left
+  }
+
+  */ }
+
+@media (min-width: 1400px) {
+  /**
+  body {
+    //font-size: $font-size;
+    //line-height: ($font-size * $ratio);
+  }
+
+  h1 {
+    //font-size: ((($font-size * $ratio) * $ratio) * $ratio);
+    //line-height: ($font-size * $ratio) * 3;
+  }
+
+  h2 {
+    //font-size: (($font-size * $ratio) * $ratio);
+    //line-height: ($font-size * $ratio) * 2;
+  }
+
+  h3 {
+    //font-size: $font-size * $ratio;
+    //line-height: ($font-size * $ratio);
+  }
+
+  h4 {
+    //font-size: $font-size;
+    //line-height: ($font-size * $ratio);
+  }
+
+  p {
+    //font-size: $font-size;
+  }
+
+  a {
+    //font-size: $font-size;
+  }
+
+  button {
+    //font-size: $font-size;
+  }
+
+  .heading {
+    //font-size: $font-size;
+  }*/
+  /*.app-banner {
+    font-size: $font-size;
+    padding: round($padding * .88)  // top
+             round($padding * .88)  // right
+             round($padding * .88)  // bottom
+             round($padding * 3.0);    // left
+  }
+
+  */ }
+
+@media (min-width: 1600px) {
+  /**
+  body {
+    //font-size: $font-size;
+    //line-height: ($font-size * $ratio);
+  }
+
+  h1 {
+    //font-size: ((($font-size * $ratio) * $ratio) * $ratio);
+    //line-height: ($font-size * $ratio) * 3;
+  }
+
+  h2 {
+    //font-size: (($font-size * $ratio) * $ratio);
+    //line-height: ($font-size * $ratio) * 2;
+  }
+
+  h3 {
+    //font-size: $font-size * $ratio;
+    //line-height: ($font-size * $ratio);
+  }
+
+  h4 {
+    //font-size: $font-size;
+    //line-height: ($font-size * $ratio);
+  }
+
+  p {
+    //font-size: $font-size;
+  }
+
+  a {
+    //font-size: $font-size;
+  }
+
+  button {
+    //font-size: $font-size;
+  }
+
+  .heading {
+    //font-size: $font-size;
+  }*/
+  /*.app-banner {
+    font-size: $font-size;
+    padding: round($padding * .88)  // top
+             round($padding * .88)  // right
+             round($padding * .88)  // bottom
+             round($padding * 3.0);    // left
+  }
+
+  */ }
+
 /** OOCSS helper functions for layout works well, esp with ie6+, perfect for hospitals, government, legacy, abroad
  */
 .wrapper {
